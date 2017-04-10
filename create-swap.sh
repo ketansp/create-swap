@@ -1,10 +1,6 @@
 sudo swapon -s
-free -m
-df -h
 sudo fallocate -l 4G /swapfile
-ls -lh /swapfile
 sudo chmod 600 /swapfile
-ls -lh /swapfile
 sudo mkswap /swapfile
 sudo swapon /swapfile
 sudo swapon -s
